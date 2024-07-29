@@ -3,9 +3,8 @@ import React, { useEffect, useState } from 'react'
 import Navbar from './Navbar'
 
 const ViewAll = () => {
-    const [token,setToken]=useState( sessionStorage.getItem("token"),)
-    const [data, setData] = useState([ ]
-    )
+    const [token,setToken]=useState( sessionStorage.getItem("token"))
+    const [data, setData] = useState([])
     const fetchData = () => {
         console.log(token)
         axios.post("http://localhost:3030/viewall", {},{
