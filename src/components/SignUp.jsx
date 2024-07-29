@@ -26,7 +26,7 @@ const SignUp = () => {
                     setInput({"name":"","phone":"","email":"","password":"","cnfPass":""})
                 }
             }
-           ).catch()
+           ).catch() 
         } else {
             alert("password and confirm password doesn't Match")
         }
