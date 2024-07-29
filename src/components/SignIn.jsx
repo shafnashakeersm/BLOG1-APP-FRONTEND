@@ -16,7 +16,7 @@ const SignIn = () => {
         console.log(input)
 
         axios.post("http://localhost:3030/signin",input).then(
-            (reaponse)=>{
+            (response)=>{
                 console.log(response.data)
                if (response.data.status=="Incorrect password") {
                 alert("Incorrect password")
